@@ -75,22 +75,32 @@
             padding: 6rem 2rem;
             text-align: center;
             background-color: var(--background-light);
-            color: #333;  /* Dark text for readability */
+            color: var(--text-light);
         }
 
-        .hero img {
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;  /* Add some space between text and image */
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-bottom: 2rem;
             object-fit: cover;
-
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
         }
 
         .container {
@@ -285,10 +295,22 @@
     </nav>
 
     <section class="hero" id="about">
+      <div class="hero-content">
+          <div class="hero-text">
+              <h2>About Me</h2>
+              <p>Vaibhav is deeply passionate about implementing Mechanical, Mechatronic, and Robotic Systems to monitor, automate, and enhance manufacturing processes. This passion fuels his drive to reduce waste and optimize profitability, making processes more efficient. His keen eye for the details of manufacturing process parameters and characteristics enables him to deliver exceptional product quality consistently. Upholding and refining standard manufacturing practices on the shop floor to exceed customer expectations is second nature to him.</p>
+          </div>
+          <div class="hero-image">
+              <img src="attachments/CSHeadshots_031523_Wanere_003.jpg" alt="Profile Picture">
+          </div>
+      </div>
+    </section>
+  
+    <!-- <section class="hero" id="about">
         <img src="attachments/CSHeadshots_031523_Wanere_003.jpg" alt="Profile Picture">
         <h2>About Me</h2>
         <p>Vaibhav is deeply passionate about implementing Mechanical, Mechatronic, and Robotic Systems to monitor, automate, and enhance manufacturing processes. This passion fuels his drive to reduce waste and optimize profitability, making processes more efficient. His keen eye for the details of manufacturing process parameters and characteristics enables him to deliver exceptional product quality consistently. Upholding and refining standard manufacturing practices on the shop floor to exceed customer expectations is second nature to him.</p>
-    </section>
+    </section> -->
 
     <main class="container">
         <section id="projects">
